@@ -1,0 +1,9 @@
+[submodule "app"]
+	path = app
+	url = https://github.com/tinehtunhlaing/Archer-app.git
+[submodule "api"]
+	path = api
+	url = https://github.com/tinehtunhlaing/Archer-api.git
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/tinehtunhlaing/Archer-mobile.git
