@@ -1,16 +1,28 @@
 # Archer
 
-Archer is a web-first freelance marketplace for clients and freelancers. The workspace contains three separately maintained projects: a web app, an API, and a planned mobile app. Product behavior and the current MVP scope are described in [SPEC.md](SPEC.md).
+Archer is a web-first freelance marketplace for clients and freelancers. Product behavior and the current MVP scope are described in [SPEC.md](SPEC.md).
 
-## Projects
+## Repositories
 
-| Project | Path | Purpose | Developer guide |
-|---|---|---|---|
-| Web app | [`app/`](app/) | React client for marketplace workflows | [app/README.md](app/README.md) |
-| API | [`api/`](api/) | Express service, authentication, and persistence | [api/README.md](api/README.md) |
-| Mobile | [`mobile/`](mobile/) | Expo client for auth, job discovery and posting, proposals, and messaging | [mobile/README.md](mobile/README.md) |
+| Project | Repository | Purpose |
+|---|---|---|
+| Web app | [`app`](app/) · [Archer-app](https://github.com/tinehtunhlaing/Archer-app) | React client for marketplace workflows |
+| API | [`api`](api/) · [Archer-api](https://github.com/tinehtunhlaing/Archer-api) | Express service, authentication, and persistence |
+| Mobile | [`mobile`](mobile/) · [Archer-mobile](https://github.com/tinehtunhlaing/Archer-mobile) | Expo client for the Archer API |
 
-Each project is intended to have its own repository, dependencies, setup, and release lifecycle. The root workspace is for project-level documentation and coordination; it is not a shared application package.
+Each project has its own dependencies, setup, and release lifecycle. This repository coordinates the projects and contains the product and contributor documentation; it is not a shared application package.
+
+Clone with the project repositories initialized:
+
+```sh
+git clone --recurse-submodules https://github.com/tinehtunhlaing/Archer.git
+```
+
+For an existing clone, initialize or refresh the project checkouts with:
+
+```sh
+git submodule update --init --recursive
+```
 
 ## Local development
 
@@ -41,6 +53,6 @@ Start the mobile app in another terminal with `cd mobile && npm install && npm s
 ## Documentation ownership
 
 - [SPEC.md](SPEC.md) describes product features, confirmed scope, and open product decisions.
-- [AGENTS.md](AGENTS.md) sets the durable project boundaries and implementation guidance for coding agents.
-- [CLAUDE.md](CLAUDE.md) imports the shared guidance in `AGENTS.md` for Claude Code.
-- Project READMEs are the user/developer guides for setup, operation, and project-specific commands.
+- [AGENTS.md](AGENTS.md) sets durable project boundaries and implementation guidance.
+- [CLAUDE.md](CLAUDE.md) imports the shared guidance in `AGENTS.md`.
+- Project READMEs own setup, operation, and project-specific commands.
