@@ -56,3 +56,7 @@ Start the mobile app in another terminal with `cd mobile && npm install && npm s
 - [AGENTS.md](AGENTS.md) sets durable project boundaries and implementation guidance.
 - [CLAUDE.md](CLAUDE.md) imports the shared guidance in `AGENTS.md`.
 - Project READMEs own setup, operation, and project-specific commands.
+
+## License
+
+Archer and each standalone project are licensed under the MIT License. See the `LICENSE` file in this repository and the corresponding file in each project repository.
